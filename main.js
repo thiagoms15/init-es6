@@ -1,3 +1,9 @@
+// WebPack
+import { sum } from './functions';
+import { sumWithRest } from './functions';
+
+console.log(sum(1,2));
+
 // REST
 
 const arr = [1, 2, 3, 4];
@@ -6,10 +12,6 @@ const userDummy = {
   name: 'Paul',
   age: 23,
   company: 'TheCompany'
-};
-
-function sumWithRest(...params) {
-  return params.reduce((total, next) => total + next );
 };
 
 const [ a, b, ...c ] = arr;
